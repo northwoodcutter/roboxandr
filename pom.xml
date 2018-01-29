@@ -6,6 +6,10 @@
 	<artifactId>Roboxandr</artifactId>
 	<name>roboxandr.photography</name>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
+	
+	<packaging>war</packaging>
+	<!-- <packaging>maven-plugin</packaging> -->
+	
 	<properties>
 		<java-version>1.8</java-version>
 		<org.springframework-version>4.3.10.RELEASE</org.springframework-version>
@@ -300,5 +304,4 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	<packaging>maven-plugin</packaging>
 </project>
