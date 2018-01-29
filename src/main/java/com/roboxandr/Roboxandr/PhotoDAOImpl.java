@@ -25,7 +25,7 @@ public class PhotoDAOImpl implements PhotoDAO {
 	}
 
 	@Override
-	public void add¿lbum(Album album) {
+	public void addAlbum(Album album) {
 		Session session = this.mFactory.getCurrentSession();
 		GoogleDrive googleDrive = new GoogleDriveImpl();
 		String id;
@@ -41,7 +41,7 @@ public class PhotoDAOImpl implements PhotoDAO {
 	}
 
 	@Override
-	public void remove¿lbum(int id) {
+	public void removeAlbum(int id) {
 		Session session = this.mFactory.getCurrentSession();
 		Album album = getAlbum(id);
 		if (album != null) {
@@ -60,7 +60,7 @@ public class PhotoDAOImpl implements PhotoDAO {
 	}
 
 	@Override
-	public void update¿lbum(Album album) {
+	public void updateAlbum(Album album) {
 		Session session = this.mFactory.getCurrentSession();
 		session.update(album);
 	}

@@ -6,11 +6,11 @@ import com.roboxandr.Roboxandr.models.Album;
 import com.roboxandr.Roboxandr.models.Photo;
 
 public interface PhotoService {
-	void add¿lbum(Album album);
+	void addAlbum(Album album);
 
-	void remove¿lbum(int id);
+	void removeAlbum(int id);
 
-	void update¿lbum(Album album);
+	void updateAlbum(Album album);
 
 	List<Album> getAlbums();
 

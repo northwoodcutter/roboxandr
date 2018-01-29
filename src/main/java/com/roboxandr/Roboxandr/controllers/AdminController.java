@@ -62,13 +62,13 @@ public class AdminController {
 	@RequestMapping(value = "/admin/add", method = RequestMethod.POST)
 	public String addAlbum(@ModelAttribute("album") Album album, BindingResult bindingResult, Model model) {
 		album.setLinkToPreviewPhoto(ROOT_FOLDER_ID);
-		mPhotoService.add¿lbum(album);
+		mPhotoService.addAlbum(album);
 		return "redirect:/admin";
 	}
 
 	@RequestMapping(value = "/update", method = RequestMethod.POST)
 	public String updateAlbum(@ModelAttribute("album") Album album) {
-		mPhotoService.update¿lbum(album);
+		mPhotoService.updateAlbum(album);
 		return "redirect:/admin";
 	}
 
@@ -81,7 +81,7 @@ public class AdminController {
 
 	@RequestMapping(value = "/admin/remove/{id}")
 	public String removeAlbum(@PathVariable("id") int id) {
-		this.mPhotoService.remove¿lbum(id);
+		this.mPhotoService.removeAlbum(id);
 		return "redirect:/admin";
 	}
 

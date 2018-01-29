@@ -17,20 +17,20 @@ public class PhotoServiceImpl implements PhotoService {
 
 	@Override
 	@Transactional
-	public void add¿lbum(Album album) {
-		this.photoDAO.add¿lbum(album);
+	public void addAlbum(Album album) {
+		this.photoDAO.addAlbum(album);
 	}
 
 	@Override
 	@Transactional
-	public void remove¿lbum(int id) {
-		this.photoDAO.remove¿lbum(id);
+	public void removeAlbum(int id) {
+		this.photoDAO.removeAlbum(id);
 	}
 
 	@Override
 	@Transactional
-	public void update¿lbum(Album album) {
-		this.photoDAO.update¿lbum(album);
+	public void updateAlbum(Album album) {
+		this.photoDAO.updateAlbum(album);
 	}
 
 	@Override
