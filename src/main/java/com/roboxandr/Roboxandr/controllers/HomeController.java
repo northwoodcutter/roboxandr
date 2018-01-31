@@ -12,14 +12,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.roboxandr.Roboxandr.ArticleService;
 import com.roboxandr.Roboxandr.PhotoService;
-import com.roboxandr.Roboxandr.models.Article;
 
 @Controller
 public class HomeController {
 	private static final Logger LOG = LoggerFactory.getLogger(HomeController.class);
 
 	private PhotoService mPhotoService;
-
+	
 	@Autowired(required = true)
 	@Qualifier(value = "photoService")
 	public void setPhotoService(PhotoService photoService) {
