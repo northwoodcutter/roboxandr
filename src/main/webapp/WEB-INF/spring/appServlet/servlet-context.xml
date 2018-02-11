@@ -32,25 +32,22 @@
 		<beans:property name="password" value="1992" />
 	</beans:bean> -->
 	
-	<beans:bean id="dataSource"
-		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<beans:property name="driverClassName" value="org.postgresql.Driver" />
-		<beans:property name="url"
-			value="jdbc:postgres://ebnqjifjoovsrl:e31b58f33bd4ebbde4b7148ed40fb9d584a7de678aeab10aa4e4a2ffde551c0a@ec2-54-217-218-80.eu-west-1.compute.amazonaws.com:5432/ddfe8hb2l08mb0" />
-		<beans:property name="username" value="ebnqjifjoovsrl" />
-		<beans:property name="password" value="e31b58f33bd4ebbde4b7148ed40fb9d584a7de678aeab10aa4e4a2ffde551c0a" />
-	</beans:bean>
-	
 	<!-- <beans:bean class="java.net.URI" id="dbUrl">
          <beans:constructor-arg value="#{systemEnvironment['DATABASE_URL']}"/>
-    </beans:bean>
+    </beans:bean> -->
 
-    <beans:bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-         <beans:property name="url" value="#{'jdbc:postgresql://' + @dbUrl.getHost() + ':' + @dbUrl.getPort() + @dbUrl.getPath()}"/>
-         <beans:property name="username" value="#{@dbUrl.getUserInfo().split(':')[0]}"/>
-         <beans:property name="password" value="#{@dbUrl.getUserInfo().split(':')[1]}"/>
+ <!--    <beans:bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+         <beans:property name="url" value="#{ 'jdbc:postgresql://' + @dbUrl.getHost() + ':' + @dbUrl.getPort() + @dbUrl.getPath() }"/>
+         <beans:property name="username" value="#{ @dbUrl.getUserInfo().split(':')[0] }"/>
+         <beans:property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] }"/>
     </beans:bean> -->
     
+       <beans:bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+         <beans:property name="url" value="#{ 'jdbc: postgresql://ebnqjifjoovsrl:e31b58f33bd4ebbde4b7148ed40fb9d584a7de678aeab10aa4e4a2ffde551c0a@ec2-54-217-218-80.eu-west-1.compute.amazonaws.com:5432/ddfe8hb2l08mb0?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory'}"/>
+         <beans:property name="username" value="ebnqjifjoovsrl"/>
+         <beans:property name="password" value="e31b58f33bd4ebbde4b7148ed40fb9d584a7de678aeab10aa4e4a2ffde551c0a"/>
+    </beans:bean>
+
 	<!-- Configure Hibernate 5 Session Facotry -->
 	<beans:bean id="hibernate5AnnotatedSessionFactory"
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
