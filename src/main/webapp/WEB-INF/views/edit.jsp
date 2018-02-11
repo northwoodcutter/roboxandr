@@ -10,6 +10,7 @@
 <link href="<c:url value="/resources/css/home.css"/>" rel="stylesheet">
 <script src="<c:url value="/resources/js/jquery-3.2.1.js"/>"></script>
 <script src="<c:url value="/resources/js/main.js"/>"></script>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/png">
 <title>${album.name}</title>
 </head>
 <body>
