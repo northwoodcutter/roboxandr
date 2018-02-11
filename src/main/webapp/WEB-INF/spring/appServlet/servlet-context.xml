@@ -42,8 +42,9 @@
          <beans:property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] }"/>
     </beans:bean> -->
     
-       <beans:bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-         <beans:property name="url" value="#{ 'jdbc: postgresql://ebnqjifjoovsrl:e31b58f33bd4ebbde4b7148ed40fb9d584a7de678aeab10aa4e4a2ffde551c0a@ec2-54-217-218-80.eu-west-1.compute.amazonaws.com:5432/ddfe8hb2l08mb0?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory'}"/>
+    <beans:bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+         <beans:property name="driverClassName" value="org.postgresql.Driver" />
+         <beans:property name="url" value="jdbc:postgresql://ec2-54-217-218-80.eu-west-1.compute.amazonaws.com:5432/ddfe8hb2l08mb0?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory"/>
          <beans:property name="username" value="ebnqjifjoovsrl"/>
          <beans:property name="password" value="e31b58f33bd4ebbde4b7148ed40fb9d584a7de678aeab10aa4e4a2ffde551c0a"/>
     </beans:bean>
