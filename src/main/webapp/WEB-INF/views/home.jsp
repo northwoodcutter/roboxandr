@@ -22,7 +22,7 @@
 			class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 logo text-uppercase">
 			<h1>roboxandr</h1>
 			<h1>фотостудия</h1>
-			<h2>фотограф александр кузнецов</h2>
+			<h2>фотографы Александр Кузнецов и Екатерина Глазачева</h2>
 		</div>
 	</header>
 	<div class="row menu-container">
@@ -80,11 +80,11 @@
 	</div>
 	<div class="row slogan text-uppercase">
 		<div class="col-md-8 col-md-offset-2 text-center">
-			<h1>"Здесь должна быть написана цитата философа или мудреца
-				Здесь должна быть написана цитата философа или мудреца"</h1>
+			<h1>"Наименее ценное, что вы можете сообщить фотографу — это то,
+				что вам нравятся или не нравятся его работы."</h1>
 		</div>
 		<div class="col-md-10 col-md-offset-1 text-right">
-			<h2>ФИО Философа</h2>
+			<h2>David Bayles</h2>
 		</div>
 	</div>
 	<div class="row news">
@@ -128,42 +128,70 @@
 		<div class="text-center text-uppercase">
 			<h1>биография/</h1>
 		</div>
-		<div class="col-md-4 col-md-offset-2 bio-text text-center">
-			<h2 class="text-uppercase">Александр Кузнецов</h2>
-			<img alt="Александр Кузнецов" class="img-circle bio-img"
-				src="<c:url value="/resources/images/A.Kuznetsov.jpg"/>">
-			<ul class="social-menu">
-				<li class="active"><a href="#"><img alt="fb"
-						src="<c:url value="/resources/icons/fb.png"/>"></a></li>
-				<li><a href="https://vk.com/roboxandr"><img alt="vk"
-						src="<c:url value="/resources/icons/vk.png"/>"></a></li>
-				<li><a href="https://www.instagram.com/roboxandr.photography/"><img
-						alt="instagram"
-						src="<c:url value="/resources/icons/instagram.png"/>"></a></li>
-				<li><a href="#"><img alt="twitter"
-						src="<c:url value="/resources/icons/twitter.png"/>"></a></li>
-			</ul>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-2 bio-text text-center">
+				<h2 class="text-uppercase">Александр Кузнецов</h2>
+				<img alt="Александр Кузнецов" class="img-circle bio-img"
+					src="<c:url value="/resources/images/A.Kuznetsov.jpg"/>">
+			</div>
+			<div class="col-md-4 bio-text col-xs-10 col-xs-offset-1">
+				<h3 class="text-uppercase">Какой-то девиз или слоган!</h3>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+					enim ad minim veniam, quis nostrud exercitation ullamco laboris
+					nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit
+					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+					occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum."</p>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+					enim ad minim veniam, quis nostrud exercitation ullamco laboris
+					nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit
+					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+					occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum."</p>
+			</div>
 		</div>
-		<div class="col-md-4 bio-text col-xs-10 col-xs-offset-1">
-			<h3 class="text-uppercase">Какой-то девиз или слоган!</h3>
-			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-				do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-				enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-				ut aliquip ex ea commodo consequat.</p>
-			</p>
-			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-				cupidatat non proident, sunt in culpa qui officia deserunt mollit
-				anim id est laborum."</p>
-			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-				do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-				enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-				ut aliquip ex ea commodo consequat.</p>
-			</p>
-			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-				cupidatat non proident, sunt in culpa qui officia deserunt mollit
-				anim id est laborum."</p>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-2 bio-text text-center">
+				<h2 class="text-uppercase">Екатерина Глазачева</h2>
+				<img alt="Екатерина Глазачева" class="img-circle bio-img"
+					src="<c:url value="/resources/images/ekaterina.jpg"/>">
+				<ul class="social-menu">
+					<li class="active"><a href="#"><img alt="fb"
+							src="<c:url value="/resources/icons/fb.png"/>"></a></li>
+					<li><a href="https://vk.com/roboxandr"><img alt="vk"
+							src="<c:url value="/resources/icons/vk.png"/>"></a></li>
+					<li><a href="https://www.instagram.com/roboxandr.photography/"><img
+							alt="instagram"
+							src="<c:url value="/resources/icons/instagram.png"/>"></a></li>
+					<li><a href="#"><img alt="twitter"
+							src="<c:url value="/resources/icons/twitter.png"/>"></a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 bio-text col-xs-10 col-xs-offset-1">
+				<h3 class="text-uppercase">Какой-то девиз или слоган!</h3>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+					enim ad minim veniam, quis nostrud exercitation ullamco laboris
+					nisi ut aliquip ex ea commodo consequat.</p>
+				</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit
+					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+					occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum."</p>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+					enim ad minim veniam, quis nostrud exercitation ullamco laboris
+					nisi ut aliquip ex ea commodo consequat.</p>
+				</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit
+					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+					occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+					mollit anim id est laborum."</p>
+			</div>
 		</div>
 	</div>
 	<footer>
